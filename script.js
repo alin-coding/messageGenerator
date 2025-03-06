@@ -29,7 +29,20 @@ const names = [
     "of the Friendly Neighborhood", "from the Bubblegum Dimension",  
     "of the Pizzaverse", "from the Legendary Arcade"
   ];
-
+  
+// Reference arrays
+//Loop through each and use Math.Random() on the indexes of each array
+// Push it into a new variable that creates the message
 function randomMessage () {
+    
+       let randomIndex = Math.floor(Math.random()*30)
 
-}
+        let currAdjective = adjectives[1]
+        let currName = names [1]
+        let currOrigins = origins[1]
+
+        return (`You created ${currAdjective} ${currName} ${currOrigins}!`)
+     
+    }
+
+console.log(randomMessage())
