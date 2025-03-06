@@ -31,17 +31,14 @@ const names = [
   ];
   
 // Reference arrays
-//Loop through each and use Math.Random() on the indexes of each array
-// Push it into a new variable that creates the message
+// Get random index from each array
 function randomMessage () {
-    
-       let randomIndex = Math.floor(Math.random()*30)
 
-        let currAdjective = adjectives[1]
-        let currName = names [1]
-        let currOrigins = origins[1]
+        let currAdjective = adjectives[Math.floor(Math.random()*adjectives.length)]
+        let currName = names [Math.floor(Math.random()*names.length)]
+        let currOrigins = origins [Math.floor(Math.random()*origins.length)]
 
-        return (`You created ${currAdjective} ${currName} ${currOrigins}!`)
+        return `You created ${currAdjective} ${currName} ${currOrigins}!`
      
     }
 
