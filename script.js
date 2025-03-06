@@ -30,8 +30,7 @@ const names = [
     "of the Pizzaverse", "from the Legendary Arcade"
   ];
   
-// Reference arrays
-// Get random index from each array
+
 function randomMessage () {
 
         let currAdjective = adjectives[Math.floor(Math.random()*adjectives.length)]
